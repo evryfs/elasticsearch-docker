@@ -1,4 +1,4 @@
-FROM library/elasticsearch:5.0.0
+FROM library/elasticsearch:5.0.1
 MAINTAINER David J. M. Karlsen <david@davidkarlsen.com>
 #RUN bin/elasticsearch-plugin install royrusso/elasticsearch-HQ
 RUN bin/elasticsearch-plugin install x-pack -b && \
