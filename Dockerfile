@@ -1,7 +1,7 @@
-FROM library/elasticsearch:5.0.1
+FROM docker.elastic.co/elasticsearch/elasticsearch:5.0.2
 MAINTAINER David J. M. Karlsen <david@davidkarlsen.com>
 #RUN bin/elasticsearch-plugin install royrusso/elasticsearch-HQ
-RUN bin/elasticsearch-plugin install x-pack -b && \
+RUN \
   echo "xpack.security.enabled: false"	>> /usr/share/elasticsearch/config/elasticsearch.yml && \
   echo "xpack.graph.enabled: false" 	>> /usr/share/elasticsearch/config/elasticsearch.yml && \
   echo "xpack.watcher.enabled: false"	>> /usr/share/elasticsearch/config/elasticsearch.yml
