@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:5.1.1
+FROM docker.elastic.co/elasticsearch/elasticsearch:5.1.2
 MAINTAINER David J. M. Karlsen <david@davidkarlsen.com>
 #RUN bin/elasticsearch-plugin install royrusso/elasticsearch-HQ
 RUN \
