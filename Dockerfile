@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:5.3.0
+FROM docker.elastic.co/elasticsearch/elasticsearch:5.3.1
 MAINTAINER David J. M. Karlsen <david@davidkarlsen.com>
 #RUN bin/elasticsearch-plugin install royrusso/elasticsearch-HQ
 RUN elasticsearch-plugin install -b https://github.com/vvanholl/elasticsearch-prometheus-exporter/releases/download/5.3.0.0/elasticsearch-prometheus-exporter-5.3.0.0.zip
