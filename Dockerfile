@@ -1,7 +1,7 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:5.3.2
+FROM docker.elastic.co/elasticsearch/elasticsearch:5.4.0
 MAINTAINER David J. M. Karlsen <david@davidkarlsen.com>
 #RUN bin/elasticsearch-plugin install royrusso/elasticsearch-HQ
-RUN elasticsearch-plugin install -b https://distfiles.compuscene.net/elasticsearch/elasticsearch-prometheus-exporter-5.3.2.0.zip
+RUN elasticsearch-plugin install -b https://github.com/vvanholl/elasticsearch-prometheus-exporter/releases/download/5.4.0.0/elasticsearch-prometheus-exporter-5.4.0.0.zip
 RUN \
   echo "xpack.security.enabled: false"	>> /usr/share/elasticsearch/config/elasticsearch.yml && \
   echo "xpack.graph.enabled: false" 	>> /usr/share/elasticsearch/config/elasticsearch.yml && \
