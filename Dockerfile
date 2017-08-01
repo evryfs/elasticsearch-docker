@@ -1,5 +1,5 @@
 FROM docker.elastic.co/elasticsearch/elasticsearch:5.5.1
-MAINTAINER David J. M. Karlsen <david@davidkarlsen.com>
+LABEL maintainer="David J. M. Karlsen <david@davidkarlsen.com>"
 ARG EPE_VERSION=5.5.1.0
 #RUN bin/elasticsearch-plugin install royrusso/elasticsearch-HQ
 RUN elasticsearch-plugin install -b https://github.com/vvanholl/elasticsearch-prometheus-exporter/releases/download/$EPE_VERSION/elasticsearch-prometheus-exporter-$EPE_VERSION.zip
