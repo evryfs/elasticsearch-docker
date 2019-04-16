@@ -1,6 +1,6 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:6.7.0
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.0.0
 LABEL maintainer="David J. M. Karlsen <david@davidkarlsen.com>"
-ARG EPE_VERSION=6.7.0.0
+ARG EPE_VERSION=7.0.0.0
 #RUN bin/elasticsearch-plugin install royrusso/elasticsearch-HQ
 RUN elasticsearch-plugin install -b https://github.com/vvanholl/elasticsearch-prometheus-exporter/releases/download/$EPE_VERSION/prometheus-exporter-$EPE_VERSION.zip
 RUN \
