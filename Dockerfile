@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:7.7.0
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.7.1
 LABEL maintainer="David J. M. Karlsen <david@davidkarlsen.com>"
 RUN \
   echo "xpack.security.enabled: false"	>> /usr/share/elasticsearch/config/elasticsearch.yml && \
